@@ -1,8 +1,8 @@
 # react-cart
 
-Implemention of React Routing, including Redirection with React Router
-Scalable by making all the routing, Dynamic
-Using basic Regex in url or URLSearchParams
+Implemention of React Routing, including Redirection with React Router <br/>
+Scalable by making all the routing, Dynamic <br/>
+Using basic Regex in url or URLSearchParams <br/>
 
 #Functionalities
 * Adding Items to cart

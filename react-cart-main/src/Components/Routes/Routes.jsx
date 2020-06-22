@@ -4,10 +4,13 @@ import HomePage from "../HomePage";
 import Cart from "../Cart";
 import Login from "../Login";
 import Products from "../Products";
+import NavBar from "../NavBar";
 import tvData from "../TV.json";
 
 const Router = ()=>{
     return(
+        <>
+        <NavBar/>
         <Switch>
             <Route path="/" exact component={HomePage}/>
             <Route path="/Cart" exact component={Cart}/>
@@ -17,6 +20,7 @@ const Router = ()=>{
 
 
         </Switch>
+        </>
     )
 }
 

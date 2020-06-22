@@ -2,12 +2,14 @@ import React from 'react';
 import './App.css';
 import "./Components/FontAwesomeIcons";
 import Router from "./Components/Routes/Routes.jsx"
+import AppProvider from './Components/AppProvider';
 
 function App() {
   return (
     <div className="App">
-      Landing Page
-      <Router/>
+      <AppProvider>
+        <Router/>
+      </AppProvider>
     </div>
   );
 }

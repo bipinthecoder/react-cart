@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import {Link} from "react-router-dom"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import style from "./Item.module.css";
 
 class Item extends Component{
@@ -9,8 +8,7 @@ class Item extends Component{
     }
 
     render(){
-        const {data} = this.props;
-        console.log("item is",data);
+        const {data, handleClick} = this.props;
         return(
             <>
                 <div className={`${style.Item}`}>
@@ -19,7 +17,7 @@ class Item extends Component{
                     <p>{data.id}</p>
                     <img src={data.url} style={{width:"150px",height:"150px"}}></img>
 
-                    <button>Add to Cart</button>
+                    <button onClick={()=>handleClick(data.id)}>Add to Cart</button>
                 </div>
                 
             </>

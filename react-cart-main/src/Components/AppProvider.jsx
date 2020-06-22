@@ -1,6 +1,7 @@
 import React, { Component, createContext } from 'react'
 import data from "./TV.json"
-export const AppContext = createContext()
+export const AppContext = createContext();
+
 
 export default class AppProvider extends Component {
     constructor(props){
@@ -8,7 +9,7 @@ export default class AppProvider extends Component {
         this.state = {
             productsArr: data,
             cartArr: [],
-            isAuthenticated: true,
+            isAuthenticated: false,
             users: [ 
                 {
                     username: 'admin',

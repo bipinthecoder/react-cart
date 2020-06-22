@@ -1,0 +1,15 @@
+.Login{
+    display: flex;
+    flex-direction: column;
+}
+
+.Login > *{
+    margin-top: 20px;
+}
+
+.Login button{
+    color:white;
+    background-color: teal;
+    width: 50%;
+    margin:0px auto;
+}

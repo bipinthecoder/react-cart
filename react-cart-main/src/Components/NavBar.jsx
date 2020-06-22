@@ -1,10 +1,13 @@
 import React from 'react'
 import {Link} from "react-router-dom"
+import {AppContext} from "./AppProvider"
 const NavBar = () => {
     return (
-        <div className="navbar">
+        <AppContext.Consumer>
+        {({getCart})=>{
+        return (<div className="navbar">
             <Link to="/">Home</Link>
-            <Link to="/Cart">Cart</Link>
+        <Link to="/Cart">Cart {getCart().length}</Link>
             <Link to="/Login">Login</Link>
             <style jsx>
                 {`
@@ -13,7 +16,9 @@ const NavBar = () => {
                     }
                 `}
             </style>
-        </div>
+        </div>)
+        }}
+        </AppContext.Consumer>
     )
 }
 

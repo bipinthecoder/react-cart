@@ -1,9 +1,9 @@
 [
-    {"url":"https://placeimg.com/640/480/tech?t=1590979801026","name":"Samsung","type":"LCD","id":100},
-    {"url":"https://placeimg.com/640/480/tech?t=1590980066528","name":"LG","type":"LCD","id":101},
-    {"url":"https://placeimg.com/640/480/tech?t=1590983444226","name":"Panasonic","type":"LCD","id":102},
-    {"url":"https://placeimg.com/640/480/tech?t=1590983551465","name":"Onida","type":"LED","id":103},
-    {"url":"https://placeimg.com/640/480/tech?t=1590983573700","name":"Apple","type":"LED","id":104},
-    {"url":"https://placeimg.com/640/480/tech?t=1590983607310","name":"LG","type":"LCD","id":105},
-    {"url":"https://placeimg.com/640/480/tech?t=1590983626427","name":"Sony","type":"LED","id":106}
+    {"price":1200,"url":"https://placeimg.com/640/480/tech?t=1590979801026","name":"Samsung","type":"LCD","id":100},
+    {"price":1300,"url":"https://placeimg.com/640/480/tech?t=1590980066528","name":"LG","type":"LCD","id":101},
+    {"price":1500,"url":"https://placeimg.com/640/480/tech?t=1590983444226","name":"Panasonic","type":"LCD","id":102},
+    {"price":800,"url":"https://placeimg.com/640/480/tech?t=1590983551465","name":"Onida","type":"LED","id":103},
+    {"price":1800,"url":"https://placeimg.com/640/480/tech?t=1590983573700","name":"Apple","type":"LED","id":104},
+    {"price":900,"url":"https://placeimg.com/640/480/tech?t=1590983607310","name":"LG","type":"LCD","id":105},
+    {"price":2000,"url":"https://placeimg.com/640/480/tech?t=1590983626427","name":"Sony","type":"LED","id":106}
 ]

@@ -14,7 +14,7 @@ class Item extends Component{
                 <div className={`${style.Item}`}>
                     <p>{data.name}</p>
                     <p>{data.type}</p>
-                    <p>{data.id}</p>
+                    <p>{data.price}</p>
                     <img src={data.url} style={{width:"150px",height:"150px"}}></img>
 
                     <button onClick={()=>handleClick(data.id)}>Add to Cart</button>

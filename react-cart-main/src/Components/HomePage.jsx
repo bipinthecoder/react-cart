@@ -50,23 +50,33 @@ class HomePage extends Component{
         const data = getProducts()
         return(
             <>
-                <div>
-                    <div>
-                        <select value={sortByPrice} onChange={this.handlePriceSortChange}>
-                            <option value="asc">ascending</option>
-                            <option value="desc">descending</option>
-                        </select>
+                <div className={`container-fluid`}>
+                    <div className="row">
+                        <div className={`col-2`}></div>
+                        <div className={`col-8`}>
+
+                        <div>
+                            <select value={sortByPrice} onChange={this.handlePriceSortChange}>
+                                <option value="asc">ascending</option>
+                                <option value="desc">descending</option>
+                            </select>
+                        </div>
+                            {data?.sort((a,b)=>{
+                                if(sortByPrice==='asc'){
+                                    return a.price-b.price
+                                }
+                                else{
+                                    return b.price-a.price
+                                }
+                            }).map(item=>
+                                <Item key={item.id} handleClick={addToCart} data={item}/>
+                            )}
+
+
+                        </div>
+                        <div className={`col-2`}></div>
                     </div>
-                    {data?.sort((a,b)=>{
-                        if(sortByPrice==='asc'){
-                            return a.price-b.price
-                        }
-                        else{
-                            return b.price-a.price
-                        }
-                    }).map(item=>
-                        <Item key={item.id} handleClick={addToCart} data={item}/>
-                    )}
+                   
                 </div>
             </>
         )
